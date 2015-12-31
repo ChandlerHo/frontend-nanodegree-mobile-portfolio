@@ -1,5 +1,25 @@
 ## Website Performance Optimization portfolio project
 
+##Critical Rendering Path
+1. Use grunt.js to resize/optimze images, just go to command line and type grunt.
+picture will be resized and saved views/images/resize
+2. inlined all css
+3. for google font, instead calling it from js, i create a css style for it.
+
+### Frame Rate
+## resize pizza
+change DOM caller in changeSliderLabel to getElementById()
+save randomPizzaContainer array length as len
+took out newwidth and dx and calculate them using Random[0]
+## updatePositions
+save len as items.length and i <20 to i < len
+for scrollTop calculation, i took it out of for loop and save it as top
+create variable phrase outside of loop so it won't be created every single time.
+change eventlistener's for loop to 24
+took out variable elem out of for loop
+
+###
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
